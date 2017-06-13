@@ -15,17 +15,23 @@ global = {
   \key c \major
   \time 4/4
  \partial 4
-  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "||" \break
-  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "||" \break
-  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "||" \break
-  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "||"
+  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "|" \break
+  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "|" \break
+  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "|" \break
+  s2 | s1 | s1 | s1 | s1 | s1 |  s2 \bar "|."
 
 }
 
 
 \header{
   title = "Behold The Potter And The Clay"
+  subtitle = "Jeremiah 18, Isaiah 64, Romans 9"
+  poet = "Isaac Watts"
+  opus = "MIGHTY KING"
+  composer = "Rebecca L. Loomis"
+  copyright = "© 2010 Rebecca Louise Loomis"
 }
+
 
 sopMusic = \relative c'' {
 % behold the potter and the clay he forms his vessels as He please
@@ -41,7 +47,7 @@ d4 c b c g a4. g8 g2 ~ g2. e4 g e g e d4. c8 c2 ~ c2.
 
 wordsa = \lyricmode { 
   \set stanza = #"1. "
-	Be -- |  hold the pot -- ter | and the clay __ |  He forms His ves -- sels | as He please __ 
+	Be -- |  hold the pot -- ter | and the clay __ | He | forms His ves -- sels | as He please __ 
 | Such | is our God, and | such are we __ | The | sub -- jects of His | high de -- crees 
 | Doth | not the work -- man’s | pow’r ex -- tend __ | O’er | all the mass, which | part to choose __
 | and | mold it for a | nob __ ler end __ | And | which to leave for | vi -- ler use? __ 
@@ -49,28 +55,41 @@ wordsa = \lyricmode {
 
 wordsb = \lyricmode { 
  \set stanza = #"2. "
-	May not 
+	May | not the sov’ -- reign | Lord on high __ | Dis -- pense His fav -- ors as He will __
+| Choose | some to life, while | o -- thers die __ | And | yet be just and | gra -- cious still?
+| What | if, to make His | ter -- ror known __ | He | lets His pa -- tience | long en -- dure __
+| Suff’ -- ring vile re -- bels | to go on __ And | seal their own de -- struc -- tion sure? __
 }
 
 wordsc = \lyricmode { 
  \set stanza = #"3. "
-	May not 
+	What if He means to show His grace   And His e - lect - ing love em-ploys
+| To | mark out some of mor - tal race     And form them fit for heav'n - ly joys?
+| Shall |  man re - ply a - gainst the Lord     And call his Ma - ker's ways un-just
+| The | thun-der of Whose dread-ful word     Can crush a thou-sand worlds to dust?
+
 }
 
 wordsd = \lyricmode { 
  \set stanza = #"4. "
-	May not 
+	But, O my soul! If truths so bright   Should da - zzle and con - found thy sight
+| Yet | still His writ - ten will o - bey   And wait the great de -cis - ive day.
+| Then | shall He make His jus - tice known   And the whole world be - fore His throne
+| With | joy or ter - ror shall con-fess   The glo - ry of His right - eous-ness.
+
 }
 
 
 
 \score {
 	\new ChoirStaff <<
+%		\chords { c4 c f c2 f2 c1. f4 c2. g1  c4 f c }
 		\new Staff = "women" <<
 			\new Voice = "sopranos" {
 				\voiceOne
 				<< \global \sopMusic >>
 			}
+			% A, T, B here
 		>>
 	\new Lyrics \lyricsto "sopranos" \wordsa
 	\new Lyrics \lyricsto "sopranos" \wordsb 
