@@ -1,6 +1,14 @@
 %{
 
-©2010 Rebecca Louise Loomis
+
+Lyrics: Isaac Watts, Public Domain
+
+Music and this arrangement:
+
+©2010-2017 Rebecca Louise Loomis and Steven Robert Loomis
+
+Licensed under https://creativecommons.org/licenses/by-nc-nd/4.0/
+
 
 %}
 
@@ -29,7 +37,7 @@ global = {
   poet = "Isaac Watts"
   opus = "MIGHTY KING"
   composer = "Rebecca L. Loomis"
-  copyright = "© 2010 Rebecca Louise Loomis"
+  copyright = "© 2010-2017 Rebecca Louise Loomis cc-by-nc-nd 4.0 see https://creativecommons.org/licenses/by-nc-nd/4.0/"
 }
 
 
