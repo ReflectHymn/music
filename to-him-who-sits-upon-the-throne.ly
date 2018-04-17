@@ -27,8 +27,8 @@ global = {
   \key c \major
   \time 4/4
  \partial 4
-  s4 | s1 | s1 | s1 | s1 \bar "|" \break
-  s1 | s1 | s1 | s1 \bar "|."
+  s4 | s1 | s1 | s1 | s2. \bar "|" \break
+  s4 | s1 | s1 | s1 | s1 \bar "|."
 
 }
 
@@ -83,7 +83,10 @@ c4 g4. a8 g4 g c1
 
 \score {
 	\new ChoirStaff <<
-%		\chords { c4 c f c2 f2 c1. f4 c2. g1  c4 f c }
+		\chords { 
+			s4 c2 f2 c1 f4. a8:m7 d4:m fs4:7 
+  			g2. c4 c2 d4:m e4:7 a:m b:7 e:m a:m e4.:m a8:m g2:7 c1
+		}
 		\new Staff = "men" <<
 		     	\clef "treble"
 			\new Voice = "soprano" {
