@@ -1,7 +1,7 @@
 %{
 
 
-Lyrics: Issac Watts / Rev 5:14
+Lyrics: Issac Watts / Rev 5:14 (public domain)
 More on this text: 
   https://hymnary.org/text/to_him_who_sits_upon_the_throne_the_god
 
@@ -34,12 +34,21 @@ global = {
 
 
 \header{
-  title = "To Him Wo Sits Upon the Throne"
+  title = "To Him Who Sits Upon the Throne"
   subtitle = "Revelation 5:14"
   poet = "Isaac Watts"
   opus = "TO HIM WHO SITS 8.6.8.6"
   composer = "Rebecca L. Loomis"
-  copyright = "© 2005,2018 Rebecca Louise Loomis cc-by-nc-nd 4.0 see https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  copyright = \markup {
+		 © 2005,2018 Rebecca Loomis 
+\with-url #"https://creativecommons.org/licenses/by-nc-nd/4.0/" {
+  \teeny { cc-by-nc-nd 4.0 see creativecommons.org/licenses/by-nc-nd/4.0/
+  \general-align #Y #DOWN {
+    \epsfile #X #10 #"by-nc-nd.eps"
+  }
+  }
+ } }
+   tagline = \markup { \with-url #"http://reflecthymn.com" { "reflecthymn.com" } }
 }
 
 
@@ -66,7 +75,7 @@ And __ _ to the Lamb that once was __ _ slain Be glo -- ry ev -- er -- more.
 
 
 tenMusic = \relative c {
-f4 f a f8 g8 a8 b8 c2.
+e4 e g f8 g8 a8 b8 c2.
 g4 f4. e8 f4 fs g2.
 e4 e g f gs a a b
 c b4. c8 g4 f4 e1
