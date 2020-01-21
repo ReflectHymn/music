@@ -28,8 +28,8 @@ global = {
 
 sopMusic = \relative c' {
   c8 f8 g8 a4. f8 d8 c8 f4. 
-  c8 f g a c b g a
-  f a ges c a d b c c d e f d g e d 
+  c8 f g a c b2 g2 a2.
+  f8 a ges c a d b c c d e f d g e d 
    e f e d c b a c     c d c b a g e f
 }
 
