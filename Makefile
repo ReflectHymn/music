@@ -8,7 +8,7 @@ all: $(PDFILES)
 
 
 %.pdf: %.ly
-	lilypond $(<F)
+	$(LILYPOND) $(<F)
 
 -include Makefile.local
 
