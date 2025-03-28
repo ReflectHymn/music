@@ -3,12 +3,13 @@
 
 LYFILES=$(wildcard *.ly)
 PDFILES=$(LYFILES:%.ly=%.pdf)
+LILYPOND=lilypond
 
 all: $(PDFILES)
 
 
 %.pdf: %.ly
-	lilypond $(<F)
+	$(LILYPOND) $(<F)
 
 -include Makefile.local
 
